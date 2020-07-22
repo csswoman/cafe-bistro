@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  color: #303133;
+}
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
