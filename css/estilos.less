@@ -28,3 +28,44 @@ img {
     vertical-align: top;
     max-width: 100%;
 }
+
+a {
+    text-decoration: none;
+    color: @dark-text;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3 ease;
+    transition: all .3s ease;
+    &:hover {
+        color: fade(@dark-text, 50%)
+    }
+}
+
+header {
+    .menu-bar-pc {
+        background: @white;
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        padding: 0 2.25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 5.875rem;
+        border: 1px solid @light-gray;
+        .logo{
+            max-width: 3.125rem;
+        }
+        .menu-principal {
+            a {
+                padding: 0 0.5625rem;
+            }
+        }
+        .top-redes {
+            a {
+                padding: 0 0.5625rem;
+            }
+        }
+    }
+}
