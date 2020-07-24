@@ -40,6 +40,21 @@ a {
     }
 }
 
+.titulo-seccion {
+    h2{
+        font-size: 3.125rem;
+        font-weight: 400;
+        line-height: 3.6875;
+        margin-bottom: 1.125rem;
+        font-style: italic;
+        letter-spacing: -0.02em;
+    }
+    p {
+        font-size: 1.25rem;
+        color: #777;
+    }
+}
+
 
 header {
     .menu-bar-pc {
@@ -163,6 +178,33 @@ header {
                         left: 50%;
                         transform: translate(-50%, 50%);
                         font-size: 1.56rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .nosotros {
+        padding: 5.625rem 0;
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .col.izq {
+                width: 30%;
+                border-right: 1px solid @light-gray;
+                display: flex;
+                align-items: center;
+                padding-right: 5%;
+            }
+            .col.der {
+                width: 70%;
+                padding-left: 5%;
+                .texto{
+                    p{
+                        font-size: 1.125rem;
+                        line-height: 1.75;
+                        color: @light-text;
                     }
                 }
             }
