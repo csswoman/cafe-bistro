@@ -48,3 +48,96 @@ header .menu-bar-pc .menu-principal a {
 header .menu-bar-pc .top-redes a {
   padding: 0 0.5625rem;
 }
+.main {
+  margin-top: 5.875rem;
+}
+.main .portada {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .portada .col {
+  width: 50%;
+  background: #141618;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .portada .col .foto {
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+.main .portada .col .foto.izq {
+  background-image: url(../img/portada-1.jpg);
+  background-position: left;
+}
+.main .portada .col .foto.der {
+  background-image: url(../img/portada-4.jpg);
+  opacity: 0.8;
+}
+.main .portada .col .foto .overlay {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 22, 24, 0.4);
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.main .portada .col .foto .overlay:hover {
+  opacity: 1;
+}
+.main .portada .col .foto .overlay i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 1.56rem;
+}
+.main .portada .col .texto {
+  width: 50%;
+  padding: 3.375rem;
+}
+.main .portada .col .texto h2 {
+  font-size: 1.81rem;
+  font-weight: 400;
+  line-height: 2.68rem;
+  margin-bottom: 1.125rem;
+}
+.main .portada .col .texto p {
+  font-size: 0.93rem;
+  line-height: 1.75;
+}
+.main .portada .col .foto-full {
+  width: 100%;
+  min-height: 15.25rem;
+  background-size: cover;
+  background-position: center;
+}
+.main .portada .col .foto-full.izq {
+  background-image: url(../img/portada-2.jpg);
+  opacity: 0.8;
+}
+.main .portada .col .foto-full.der {
+  background-image: url(../img/portada-3.jpg);
+}
+.main .portada .col .foto-full .overlay {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 22, 24, 0.4);
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.main .portada .col .foto-full .overlay:hover {
+  opacity: 1;
+}
+.main .portada .col .foto-full .overlay i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 1.56rem;
+}

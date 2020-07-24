@@ -40,6 +40,7 @@ a {
     }
 }
 
+
 header {
     .menu-bar-pc {
         background: @white;
@@ -65,6 +66,105 @@ header {
         .top-redes {
             a {
                 padding: 0 0.5625rem;
+            }
+        }
+    }
+}
+
+
+.main {
+    margin-top: 5.875rem;
+    .portada {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .col {
+            width: 50%;
+            background: @custom-black;
+            color: @white;
+            display: flex;
+            flex-wrap: wrap;
+            .foto {
+                background-size: cover;
+                background-position: center;
+                width: 50%;
+                &.izq {
+                    background-image: url(../img/portada-1.jpg);
+                    background-position: left;
+                }
+                &.der {
+                    background-image: url(../img/portada-4.jpg);
+                    opacity: 0.8;
+                }
+                .overlay {
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: fade(@custom-black, 40%);
+                    position: relative;
+                    cursor: pointer;
+                    -webkit-transition: all .3s ease;
+                    -o-transition: all .3 ease;
+                    transition: all .3s ease;
+                    &:hover {
+                        opacity: 1;
+                    }
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, 50%);
+                        font-size: 1.56rem;
+                    }
+                }
+            }
+            .texto {
+                width: 50%;
+                padding: 3.375rem;
+                h2 {
+                    font-size: 1.81rem;
+                    font-weight: 400;
+                    line-height: 2.68rem;
+                    margin-bottom: 1.125rem;
+                }
+                p {
+                    font-size: 0.93rem;
+                    line-height: 1.75;
+                }
+            }
+            .foto-full {
+                width: 100%;
+                min-height: 15.25rem;
+                background-size: cover;
+                background-position: center;
+                &.izq {
+                    background-image: url(../img/portada-2.jpg);
+                    opacity: 0.8;
+                }
+                &.der {
+                    background-image: url(../img/portada-3.jpg);
+                }
+                .overlay {
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: fade(@custom-black, 40%);
+                    position: relative;
+                    cursor: pointer;
+                    -webkit-transition: all .3s ease;
+                    -o-transition: all .3 ease;
+                    transition: all .3s ease;
+                    &:hover {
+                        opacity: 1;
+                    }
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, 50%);
+                        font-size: 1.56rem;
+                    }
+                }
             }
         }
     }
