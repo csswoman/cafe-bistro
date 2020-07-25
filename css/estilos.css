@@ -229,3 +229,75 @@ header .menu-bar-pc .top-redes a {
 .main .chef .container .col .slider .slide.foto3 {
   background-image: url(../img/chef-3.jpg);
 }
+.main .menu-platos {
+  padding: 5.625rem 0;
+}
+.main .menu-platos .container .titulo-seccion h2 {
+  text-align: center;
+}
+.main .menu-platos .container .contenedor-menu {
+  margin-top: 2.5rem;
+}
+.main .menu-platos .container .contenedor-menu .encabezado {
+  font-weight: 600;
+  font-family: 'Poppins', serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.main .menu-platos .container .contenedor-menu .encabezado li a {
+  font-size: 0.75rem;
+  padding: 0 1.4375rem 1.125rem 1.435rem;
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+.main .menu-platos .container .contenedor-menu .encabezado li a:hover {
+  color: #b4975a;
+}
+.main .menu-platos .container .contenedor-menu .encabezado li.active {
+  color: #b4975a;
+  border-bottom: 2px solid #b4975a;
+}
+.main .menu-platos .container .contenido {
+  max-width: 50rem;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  border: 6px double #eaeaea;
+  padding: 0 2.25rem;
+}
+.main .menu-platos .container .contenido > div {
+  display: none;
+  transition: all 0.3s ease;
+}
+.main .menu-platos .container .contenido .active {
+  display: block;
+}
+.main .menu-platos .container .contenido .item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2.25rem 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.main .menu-platos .container .contenido .item .col.izq {
+  width: 70%;
+}
+.main .menu-platos .container .contenido .item .col.izq h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.625rem;
+}
+.main .menu-platos .container .contenido .item .col.izq p {
+  font-size: 1rem;
+  color: #777;
+}
+.main .menu-platos .container .contenido .item .col.der {
+  width: 30%;
+  text-align: center;
+  font-size: 2.1rem;
+}
