@@ -20,8 +20,6 @@ img {
 a {
   text-decoration: none;
   color: #303133;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3 ease;
   transition: all 0.3s ease;
 }
 a:hover {
@@ -97,8 +95,6 @@ header .menu-bar-pc .top-redes a {
   background: rgba(20, 22, 24, 0.4);
   position: relative;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3 ease;
   transition: all 0.3s ease;
 }
 .main .portada .col .foto .overlay:hover {
@@ -145,8 +141,6 @@ header .menu-bar-pc .top-redes a {
   background: rgba(20, 22, 24, 0.4);
   position: relative;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3 ease;
   transition: all 0.3s ease;
 }
 .main .portada .col .foto-full .overlay:hover {
@@ -258,8 +252,6 @@ header .menu-bar-pc .top-redes a {
   padding: 0 1.4375rem 1.125rem 1.435rem;
   display: block;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3 ease;
   transition: all 0.3s ease;
   border-bottom: 2px solid transparent;
 }
@@ -279,8 +271,6 @@ header .menu-bar-pc .top-redes a {
 }
 .main .menu-platos .container .contenido > div {
   display: none;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3 ease;
   transition: all 0.3s ease;
 }
 .main .menu-platos .container .contenido .active {
@@ -358,7 +348,7 @@ header .menu-bar-pc .top-redes a {
   max-width: 40.625rem;
   margin: 0 auto;
   padding: 2.25rem;
-  margin-top: -625rem;
+  margin-top: -6.25rem;
   width: 90%;
 }
 .main .contacto .formulario .formulario_contacto .input-group {
@@ -383,4 +373,54 @@ header .menu-bar-pc .top-redes a {
 .main .contacto .formulario .formulario_contacto .input-group input[type="email"]:focus,
 .main .contacto .formulario .formulario_contacto .input-group textarea:focus {
   border-bottom: 2px solid #b4975a;
+}
+.main .contacto .formulario .formulario_contacto .input-group textarea {
+  max-width: 100%;
+  max-height: 10.25rem;
+  min-height: 5.125rem;
+  min-width: 100%;
+}
+.main .contacto .formulario .formulario_contacto .input-group label {
+  color: #777;
+  font-family: 'Poppins', serif;
+}
+.main .contacto .formulario .formulario_contacto .input-group label.label {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-left: 1rem;
+  transition: all 0.3s ease;
+}
+.main .contacto .formulario .formulario_contacto .input-group label.label.active {
+  top: -0.75rem;
+  margin-left: 0;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  color: #777;
+}
+.main .contacto .formulario .formulario_contacto .input-group .error {
+  position: absolute;
+  color: #ff3b3b;
+  font-family: 'Poppins', serif;
+  font-size: 0.875rem;
+}
+.main .contacto .formulario .formulario_contacto input[type="submit"] {
+  font-family: 'Poppins', serif;
+  background: #b4975a;
+  color: #fff;
+  border-radius: 1px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3.125rem;
+  padding: 0.9375rem;
+  width: 20%;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.main .contacto .formulario .formulario_contacto input[type="submit"]:hover {
+  background: #977c44;
 }

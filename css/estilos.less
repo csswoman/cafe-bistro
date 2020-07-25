@@ -448,102 +448,102 @@ header {
             }
         }
 
-        .formulario {
-            position: relative;
-            z-index: 3;
-            background: @white;
-            max-width: 40.625rem;
-            margin: 0 auto;
-            padding: 2.25rem;
-            margin-top: -625rem;
-            width: 90%;
+        .formulario{
+			position: relative;
+			z-index: 3;
+			background: @white;
+			max-width: 40.625rem;
+			margin: 0 auto;
+			padding: 2.25rem;
+			margin-top: -6.25rem;
+			width: 90%;
 
-            .formulario_contacto {
-                .input-group {
-                    position: relative;
-                    margin-bottom: 2rem;
+			.formulario_contacto{
+				.input-group{
+					position: relative;
+					margin-bottom: 2rem;
 
-                    input[type="text"],
-                    input[type="email"],
-                    textarea {
-                        font-family: @secondary-font;
-                        font-size: 1rem;
-                        color: @dark-text;
-                        width: 100%;
-                        outline: none;
-                        padding: 0.9375rem 0;
-                        background: none;
-                        border: none;
-                        border-bottom: 2px solid fade(@golden, 50%);
-                        vertical-align: top;
+					input[type="text"],
+					input[type="email"],
+					textarea{
+						font-family: @secondary-font;
+						font-size: 1rem;
+						color: @dark-text;
+						width: 100%;
+						outline: none;
+						padding: 0.9375rem 0;
+						background: none;
+						border: none;
+						border-bottom: 2px solid fade(@golden, 50%);
+						vertical-align: top;
 
-                        &:focus {
-                            border-bottom: 2px solid @golden;
-                        }
-                    }
+						&:focus{
+							border-bottom: 2px solid @golden;
+						}
+					}
 
-                    textarea {
-                        max-width: 100%;
-                        max-height: 10.25rem;
-                        min-height: 5.125rem;
-                        min-width: 100%;
-                    }
+					textarea{
+						max-width: 100%;
+						max-height: 10.25rem;
+						min-height: 5.125rem;
+						min-width: 100%;
+					}
 
-                    label {
-                        color: @light-text;
-                        font-family: @secondary-font;
+					label{
+						color: @light-text;
+						font-family: @secondary-font;
 
-                        &.label{
-                            position: absolute;
-                            top: 16px;
-                            left: 0;
-                            font-style: 1rem;
-                            line-height: 1rem;
-                            margin-left: 1rem;
-                            -webkit-transition: all .3s ease;
-                            -o-transition: all .3 ease;
-                            transition: all .3s ease;
+						&.label{
+							position: absolute;
+							top: 1rem;
+							left: 0;
+							font-size: 1rem;
+							line-height: 1rem;
+							margin-left: 1rem;
+							-webkit-transition: all .3s ease;
+							-o-transition: all .3s ease;
+							transition: all .3s ease;
 
-                            &.active {
-                                top: -0.75rem;
-                                margin-left: 0;
-                                font-size: 0.75rem;
-                                line-height: 0.75rem;
-                                color: @light-text;
-                            }
-                        }
-                    }
+							&.active{
+								top: -0.75rem;
+								margin-left: 0;
+								font-size: 0.75rem;
+								line-height: 0.75rem;
+								color: @light-text;
+							}
+						}
+					}
 
-                    .error {
-                        position: absolute;
-                        color: rgba(255,59,59);
-                        font-family: @secondary-font;
-                        font-size: 0.875rem;
-                    }
-                }
+					.error{
+						position: absolute;
+						color: rgb(255,59,59);
+						font-family: @secondary-font;
+						font-size: 0.875rem;
+					}
+				}
 
-                input[type="submit"] {
-                    font-family: @secondary-font;
-                    background: @golden;
-                    color: @white;
-                    border-radius: 1px;
-                    border: 2px solid @white;
-                    cursor: pointer;
-                    display: block;
-                    margin: 0 auto;
-                    margin-top: 3.125rem;
-                    padding: 0.9375rem;
-                    width: 20%;
-                    outline: none;
-                    -webkit-transition: all .3s ease;
-                    -o-transition: all .3 ease;
-                    transition: all .3s ease;
+				input[type="submit"]{
+					font-family: @secondary-font;
+					background: @golden;
+					color: @white;
+					border-radius: 1px;
+					border: 2px solid @white;
+					cursor: pointer;
+					display: block;
+					margin: 0 auto;
+					margin-top: 3.125rem;
+					padding: 0.9375rem;
+					width: 20%;
+					outline: none;
+					-webkit-transition: all .3s ease;
+					-o-transition: all .3s ease;
+					transition: all .3s ease;
 
-                    &:hover {
-                        background: darken(@golden, 10%);
-                    }
-                }
-            }
-        }
-    }
+					&:hover{
+						background: darken(@golden, 10%);
+					}
+				}
+			}
+		}
+	}
 }
