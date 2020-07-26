@@ -442,3 +442,14 @@ footer .bottom-redes a {
 footer .bottom-redes a:hover {
   color: #b4975a;
 }
+@media all and (max-width: 1500px) {
+  .main .portada .col .texto {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+@media all and (max-width: 1999px) {
+  .main .portada .col .foto {
+    display: none;
+  }
+}
