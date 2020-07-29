@@ -91,6 +91,62 @@ header {
             }
         }
     }
+
+    .menu-bar-movil {
+        background: @white;
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        padding: 0 2.25rem;
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 5.875rem;
+        border: 1px solid @light-gray;
+
+        .logo {
+            max-width: 3.125rem;
+        }
+
+        .burger-menu {
+            cursor: pointer;
+            font-size: 2.1875rem;
+        }
+
+        .slideMenu {
+            position: fixed;
+            top: 5.875rem;
+            left: -80%;
+            background: @white;
+            text-align: center;
+            padding: 1.25rem 2.25rem;
+            width: 80%;
+            -webkit-transition: all .3s ease;
+            -o-transition: all .3 ease;
+            transition: all .3s ease;
+
+            &.active {
+                left: 0;
+            }
+
+            .top-redes {
+                margin-bottom: 0.625rem;
+                a {
+                    padding: 0 0.5625rem;
+                }
+            }
+
+            .menu-principal {
+                a {
+                    display: block;
+                    padding: 0.625rem 0;
+                    border-top: 1px solid @light-gray;
+                }
+            }
+        }
+    }
 }
 
 
@@ -623,6 +679,17 @@ footer {
 }
 
 @media all and (max-width: 800px) {
+    header {
+        .menu-bar-pc {
+            display: none;
+        }
+
+        .menu-bar-movil {
+            display: flex;
+        }
+    }
+
+
     .main .portada .col {
         width: 100%;
 
