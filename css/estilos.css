@@ -448,7 +448,7 @@ footer .bottom-redes a:hover {
     padding-right: 2.25rem;
   }
 }
-@media all and (max-width: 1999px) {
+@media all and (max-width: 1000px) {
   .main .portada .col .foto {
     display: none;
   }
@@ -465,5 +465,63 @@ footer .bottom-redes a:hover {
     display: block;
     padding: 0;
     margin-bottom: 2.25rem;
+  }
+  .main .nosotros .container .col.der {
+    width: 100%;
+    padding-left: 0;
+    text-align: justify;
+  }
+  .main .contacto .datos .container .blurb {
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0 auto;
+    margin-bottom: 2.25rem;
+  }
+  .main .contacto .datos .container .blurb:last-child {
+    margin-bottom: 0;
+  }
+}
+@media all and (max-width: 800px) {
+  .main .portada .col {
+    width: 100%;
+  }
+  .main .portada .col .foto-full.izq {
+    display: none;
+  }
+  .main .portada .col .texto h2 {
+    text-align: center;
+  }
+  .main .portada .col .texto p {
+    text-align: justify;
+  }
+  .main .chef .container .col {
+    width: 100%;
+  }
+  .main .chef .container .col .titulo-seccion {
+    padding-left: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+}
+@media all and (max-width: 580px) {
+  .titulo-seccion h2 {
+    font-size: 2rem;
+  }
+  .main .chef .container .col.der .texto p {
+    font-size: 1rem;
+  }
+  .main .chef .container .col .titulo-seccion p {
+    font-size: 1rem;
+  }
+  .main .menu-platos .container .contenedor-menu .contenido .item .col.izq {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.625rem;
+  }
+  .main .menu-platos .container .contenedor-menu .contenido .item .col.der {
+    width: 100%;
+  }
+  .main .contacto .formulario .formulario_contacto input[type=submit] {
+    width: 100%;
   }
 }
