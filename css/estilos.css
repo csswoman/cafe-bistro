@@ -37,6 +37,25 @@ a:hover {
   font-size: 1.25rem;
   color: #777;
 }
+.imagen-modal {
+  width: 90%;
+  max-width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.imagen-modal + i {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  color: #303133;
+  font-size: 2.25rem;
+  background: #fff;
+  display: inline-block;
+  padding: 0.75rem 0.875rem;
+  cursor: pointer;
+}
 header .menu-bar-pc {
   background: #fff;
   width: 100%;

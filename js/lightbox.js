@@ -7,7 +7,8 @@ let propLightbox = {
     imagenSrc: null,
     cuerpoDom: document.getElementsByTagName('body')[0],
     lightbox_container: null,
-    modal: null
+    modal: null,
+    cerrarModal: null
 }
 
 // Objeto con los métodos del efecto Lightbox
@@ -50,6 +51,15 @@ let metLightbox = {
 
         propLightbox.modal.appendChild(document.createElement('IMG')).setAttribute('src', propLightbox.imagenSrc);
         propLightbox.modal.getElementsByTagName('img')[0].setAttribute('class', 'imagen-modal');
+
+        propLightbox.modal.innerHTML += '<i id="cerrar_modal" class="fa fa-times"</i>';
+        propLightbox.cerrarModal = document.getElementById('cerrar_modal');
+        propLightbox.cerrarModal.addEventListener('click', metLightbox.cerrarModal);
+
+    },
+
+    cerrarModal: function () {
+        propLightbox.cuerpoDom.removeChild(propLightbox.lightbox_container);
     }
 }
 
