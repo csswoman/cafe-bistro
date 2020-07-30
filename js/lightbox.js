@@ -8,7 +8,8 @@ let propLightbox = {
     cuerpoDom: document.getElementsByTagName('body')[0],
     lightbox_container: null,
     modal: null,
-    cerrarModal: null
+    cerrarModal: null,
+    animacion: 'fade'
 }
 
 // Objeto con los métodos del efecto Lightbox
@@ -51,6 +52,14 @@ let metLightbox = {
 
         propLightbox.modal.appendChild(document.createElement('IMG')).setAttribute('src', propLightbox.imagenSrc);
         propLightbox.modal.getElementsByTagName('img')[0].setAttribute('class', 'imagen-modal');
+
+        if(propLightbox.animacion == 'fade') {
+            document.getElementsByTagName('imagen-modal')[0].style.opacity = 0;
+
+            setTimeout(function(){
+                document.getElementsByTagName('imagen-modal')[0].style.opacity = 1;
+            }, 50);
+        }
 
         propLightbox.modal.innerHTML += '<i id="cerrar_modal" class="fa fa-times"</i>';
         propLightbox.cerrarModal = document.getElementById('cerrar_modal');

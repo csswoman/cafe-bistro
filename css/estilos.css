@@ -44,6 +44,7 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: opacity 0.7s ease;
 }
 .imagen-modal + i {
   position: absolute;
