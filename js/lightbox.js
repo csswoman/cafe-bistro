@@ -1,3 +1,4 @@
+(function(){
 
 // Objeto con las propiedades del efecto Lightbox
 let propLightbox = {
@@ -73,3 +74,6 @@ let metLightbox = {
 }
 
 metLightbox.inicio();
+
+}())
+
