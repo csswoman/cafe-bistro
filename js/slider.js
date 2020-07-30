@@ -1,3 +1,4 @@
+(function(){
 
 //Propiedades Slider
 let propSlider = {
@@ -25,9 +26,10 @@ let metSlider = {
 
             propSlider.slider.style.transition = 'unset';
             propSlider.slider.style.marginLeft = 0;
-
         }, 1000);
     }
 }
 
 metSlider.inicio();
+}())
+
