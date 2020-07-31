@@ -6,7 +6,8 @@ let propTabs = {
 
     primer_encabezado: document.getElementById('encabezado_menu').firstElementChild,
     primer_contenido: document.getElementById('contenido_menu').firstElementChild,
-    enlaces_encabezado: document.querySelectorAll('#encabezado_menu li a')
+    enlaces_encabezado: document.querySelectorAll('#encabezado_menu li a'),
+    li_encabezado: document.querySelectorAll('#encabezado_menu li')
 }
 
 
@@ -23,8 +24,11 @@ let metTabs = {
         }
     },
 
-    evento: function(){
-        
+    evento: function(menu){
+        menu.preventDefault();
+        for (var i = 0; i < propTabs.li_encabezado.length; i++) {
+            propTabs.li_encabezado[i]
+        }
     }
 }
 
