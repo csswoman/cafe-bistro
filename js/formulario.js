@@ -2,7 +2,9 @@
 let propFormulario = {
 
     formulario: document.formulario_contacto,
-    elementos: document.formulario_contacto.elements
+    elementos: document.formulario_contacto.elements,
+    error: null,
+    textoError: null
 
 }
 
@@ -18,6 +20,8 @@ let metFormulario = {
                 propFormulario.elementos[i].addEventListener('blur', metFormulario.blurInput);
             }
         }
+
+        propFormulario.formulario.addEventListener('submit', metFormulario.validarInputs);
     },
 
     focusInput: function () {
@@ -27,6 +31,22 @@ let metFormulario = {
     blurInput: function () {
         if(this.value == '') {
             this.parentElement.children[1].className = 'label';
+        }
+    },
+
+    validarInputs: function(e) {
+        for (var i = 0; i < propFormulario.elementos.length; i++) {
+
+            if ( propFormulario.elementos[i].value == '') {
+                e.preventDefault();
+
+                propFormulario.error = document.createElement('p');
+                propFormulario.textoError = document.createTextNode('Por favor llena el campo con tu ' + propFormulario.elementos[i].name);
+                propFormulario.error.appendChild(propFormulario.textoError);
+                propFormulario.error.className = 'error';
+
+                propFormulario.elementos[i].parentElement.appendChild(propFormulario.error);
+            }
         }
     }
 }
