@@ -1,4 +1,3 @@
-(function(){
 
 // Objeto con Propiedades de Parallax
 let propParallax = {
@@ -20,11 +19,11 @@ let metParallax = {
     },
 
     scrollParallax: function () {
-        
+
+        propParallax.recorrido = window.pageYOffset;
+        propParallax.limite = propParallax.seccion.offsetTop + propParallax.seccion.offsetHeight;
     }
 }
 
 metParallax.inicio();
 
-
-}())
