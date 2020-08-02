@@ -1,3 +1,4 @@
+(function(){
 // Objeto con propiedades de formulario
 let propFormulario = {
 
@@ -60,3 +61,6 @@ let metFormulario = {
 }
 
 metFormulario.inicio();
+
+}())
+
