@@ -29,8 +29,9 @@ let metScroll = {
 
     moverse: function(e) {
         e.preventDefault();
+        clearInterval(propScroll.intervalo);
         propScroll.destino = this.getAttribute('href');
-        propScroll.seccion_distancia = document.querySelector(propScroll.destino).offsetTop;
+        propScroll.seccion_distancia = document.querySelector(propScroll.destino).offsetTop - 94;
 
         propScroll.posicion = window.pageYOffset;
         propScroll.intervalo = setInterval(function(){
@@ -54,6 +55,28 @@ let metScroll = {
             window.scrollTo(0, propScroll.posicion)
 
         }, 15);
+    },
+
+    subir: function (e) {
+        e.preventDefault();
+        clearInterval(propScroll.intervalo);
+        propScroll.posicion = window.pageYOffset;
+        propScroll.intervalo = setInterval(function(){
+
+            if ( propScroll.posicion > 0) {
+
+                propScroll.posicion -= 30;
+
+                if (propScroll.posicion <= 0) {
+                    clearInterval(propScroll.intervalo);
+                }
+            } else {
+                return;
+            }
+
+            window.scrollTo(0, propScroll.posicion);
+
+        },15);
     }
 
 }
