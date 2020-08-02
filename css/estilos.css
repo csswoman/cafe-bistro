@@ -112,7 +112,7 @@ header .menu-bar-movil .slideMenu {
   transition: all 0.3s ease;
 }
 header .menu-bar-movil .slideMenu.active {
-  left: 0;
+  left: 55px;
 }
 header .menu-bar-movil .slideMenu .top-redes {
   margin-bottom: 0.625rem;
@@ -336,7 +336,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
 }
 .main .menu-platos .container .contenido > div {
   display: none;
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
 }
 .main .menu-platos .container .contenido .active {
   display: block;
@@ -372,6 +372,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   background-image: url('../img/contacto-bg.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .main .contacto .datos .overlay {
   position: absolute;
