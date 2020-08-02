@@ -4,7 +4,7 @@ let propFormulario = {
     formulario: document.formulario_contacto,
     elementos: document.formulario_contacto.elements,
     error: null,
-    textoError: null
+    textoError: null,
 
 }
 
@@ -40,12 +40,20 @@ let metFormulario = {
             if ( propFormulario.elementos[i].value == '') {
                 e.preventDefault();
 
-                propFormulario.error = document.createElement('p');
-                propFormulario.textoError = document.createTextNode('Por favor llena el campo con tu ' + propFormulario.elementos[i].name);
-                propFormulario.error.appendChild(propFormulario.textoError);
-                propFormulario.error.className = 'error';
+                if(propFormulario.elementos[i].parentElement.children.length < 3){
 
-                propFormulario.elementos[i].parentElement.appendChild(propFormulario.error);
+                    propFormulario.error = document.createElement('p');
+                    propFormulario.textoError = document.createTextNode('Por favor llena el campo con tu ' + propFormulario.elementos[i].name);
+                    propFormulario.error.appendChild(propFormulario.textoError);
+                    propFormulario.error.className = 'error';
+
+                    propFormulario.elementos[i].parentElement.appendChild(propFormulario.error);
+                }
+            }   else {
+                    if(propFormulario.elementos[i].parentElement.children.length >= 3) {
+                        propFormulario.error = propFormulario.elementos[i].parentElement.getElementsByTagName('p')[0];
+                        propFormulario.elementos[i].parentElement.removeChild(propFormulario.error);
+                    }
             }
         }
     }
