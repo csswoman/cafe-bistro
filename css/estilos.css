@@ -129,7 +129,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
 }
 .main .portada .col {
   width: 50%;
-  background: #0e241b;
+  background: #3a2316;
   color: #fff;
   display: flex;
   flex-wrap: wrap;
@@ -151,7 +151,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   opacity: 0;
   width: 100%;
   height: 100%;
-  background: rgba(14, 36, 27, 0.4);
+  background: rgba(58, 35, 22, 0.4);
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -197,7 +197,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   opacity: 0;
   width: 100%;
   height: 100%;
-  background: rgba(14, 36, 27, 0.4);
+  background: rgba(58, 35, 22, 0.4);
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -237,7 +237,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   color: #777;
 }
 .main .chef {
-  background: #0e241b;
+  background: #3a2316;
   padding: 5.625rem 0;
 }
 .main .chef .container {
@@ -372,7 +372,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(14, 36, 27, 0.3);
+  background: rgba(58, 35, 22, 0.3);
   top: 0;
   z-index: 1;
 }
@@ -486,7 +486,7 @@ header .menu-bar-movil .slideMenu .menu-principal a {
 }
 footer {
   margin-top: 2.25rem;
-  background: #0e241b;
+  background: #3a2316;
   padding: 5.625rem 0;
   text-align: center;
   color: #fff;
