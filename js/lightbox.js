@@ -1,79 +1,77 @@
 (function(){
 
 // Objeto con las propiedades del efecto Lightbox
-let propLightbox = {
+var propLightbox = {
 
-    imgContainer: document.getElementsByClassName('lightbox'),
-    imagen: null,
-    imagenSrc: null,
-    cuerpoDom: document.getElementsByTagName('body')[0],
-    lightbox_container: null,
-    modal: null,
-    cerrarModal: null,
-    animacion: 'fade'
+	imgContainer: document.getElementsByClassName('lightbox'),
+	imagen: null,
+	imagenSrc: null,
+	cuerpoDom: document.getElementsByTagName('body')[0],
+	lightbox_container: null,
+	modal: null,
+	cerrarModal: null
+
 }
 
-// Objeto con los métodos del efecto Lightbox
-let metLightbox = {
-    inicio: function() {
 
-        for (var i = 0; i < propLightbox.imgContainer.length; i++) {
-            propLightbox.imgContainer[i].addEventListener('click', metLightbox.capturaImagen)
-        }
+// Objeto con los Métodos del efecto Lightbox
+var metLightbox = {
 
-    },
+	inicio: function(){
 
-    capturaImagen: function() {
-
-        propLightbox.imagen = this;
-        metLightbox.lightbox(propLightbox.imagen);
-    },
-
-    lightbox: function(imagen){
-
-        propLightbox.imagenSrc = window.getComputedStyle(imagen, null).backgroundImage.slice(5, -2);0
-
-        propLightbox.cuerpoDom.appendChild(document.createElement('DIV')).setAttribute('id', 'lightbox_container');
-
-        propLightbox.lightbox_container = document.getElementById('lightbox_container');
-
-        propLightbox.lightbox_container.style.width = '100%';
-        propLightbox.lightbox_container.style.height = '100%';
-        propLightbox.lightbox_container.style.position = 'fixed';
-        propLightbox.lightbox_container.style.zIndex = '1000';
-        propLightbox.lightbox_container.style.background = 'rgba(0,0,0,0.8)';
-        propLightbox.lightbox_container.style.top = '0';
-        propLightbox.lightbox_container.style.left = '0';
-
-        propLightbox.lightbox_container.appendChild(document.createElement('DIV')).setAttribute('id', 'modal');
-        propLightbox.modal = document.getElementById('modal');
-
-        propLightbox.modal.style.height= '100%';
+		for (var i = 0; i < propLightbox.imgContainer.length; i++) {
+			propLightbox.imgContainer[i].addEventListener('click', metLightbox.capturaImagen);
+		}
+	},
 
 
-        propLightbox.modal.appendChild(document.createElement('IMG')).setAttribute('src', propLightbox.imagenSrc);
-        propLightbox.modal.getElementsByTagName('img')[0].setAttribute('class', 'imagen-modal');
+	capturaImagen: function(){
 
-        if(propLightbox.animacion == 'fade') {
-            document.getElementsByTagName('imagen-modal')[0].style.opacity = 0;
+		propLightbox.imagen = this;
+		metLightbox.lightbox(propLightbox.imagen);
 
-            setTimeout(function(){
-                document.getElementsByTagName('imagen-modal')[0].style.opacity = 1;
-            }, 50);
-        }
+	},
 
-        propLightbox.modal.innerHTML += '<i id="cerrar_modal" class="fa fa-times"</i>';
-        propLightbox.cerrarModal = document.getElementById('cerrar_modal');
-        propLightbox.cerrarModal.addEventListener('click', metLightbox.cerrarModal);
 
-    },
+	lightbox: function(imagen){
 
-    cerrarModal: function () {
-        propLightbox.cuerpoDom.removeChild(propLightbox.lightbox_container);
-    }
+		propLightbox.imagenSrc = window.getComputedStyle(imagen, null).backgroundImage.slice(5, -2);
+
+		propLightbox.cuerpoDom.appendChild(document.createElement('DIV')).setAttribute('id', 'lightbox_container');
+
+		propLightbox.lightbox_container = document.getElementById('lightbox_container');
+
+		propLightbox.lightbox_container.style.width = '100%';
+		propLightbox.lightbox_container.style.height = '100%';
+		propLightbox.lightbox_container.style.position = 'fixed';
+		propLightbox.lightbox_container.style.zIndex = '1000';
+		propLightbox.lightbox_container.style.background = 'rgba(0,0,0,0.8)';
+		propLightbox.lightbox_container.style.top = '0';
+		propLightbox.lightbox_container.style.left = '0';
+
+		propLightbox.lightbox_container.appendChild(document.createElement('DIV')).setAttribute('id', 'modal');
+		propLightbox.modal = document.getElementById('modal');
+
+		propLightbox.modal.style.height = '100%';
+
+		propLightbox.modal.appendChild(document.createElement('IMG')).setAttribute('src', propLightbox.imagenSrc);
+		propLightbox.modal.getElementsByTagName('img')[0].setAttribute('class', 'imagen-modal');
+
+		propLightbox.modal.innerHTML += '<i id="cerrar_modal" class="fa fa-times" aria-hidden="true"></i>';
+		propLightbox.cerrarModal = document.getElementById('cerrar_modal');
+		propLightbox.cerrarModal.addEventListener('click', metLightbox.cerrarModal);
+
+	},
+
+	cerrarModal: function(){
+		propLightbox.cuerpoDom.removeChild(propLightbox.lightbox_container);
+	}
+
+
 }
 
 metLightbox.inicio();
+
 
 }())
 
