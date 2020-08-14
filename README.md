@@ -1,6 +1,6 @@
 # café-bistro
 
-En este proyecto utilicé HTML, LESS y JavaScript para la maquetación y aplicación de interactividad en la web.
+En este proyecto utilicé HTML, el preprocesador LESS (CSS) para la maquetación y JavaScript para la interactividad en la web.
 
 Programé  7 scripts:
 
